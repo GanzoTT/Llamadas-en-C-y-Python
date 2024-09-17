@@ -33,15 +33,15 @@ Si todo funciona correctamente, primero verás el contenido del archivo (`ejempl
     Este es un ejemplo de contenido dentro del archivo.
     Archivo cerrado correctamente.
     
-    Proceso padre (PID: 12345) esperando al proceso hijo (PID: 12346).
+    Proceso padre (PID: 18402) esperando al proceso hijo (PID: 18403).
 
     Proceso hijo creado. Ejecutando `ls` para listar archivos del directorio.
     
-    total 4
-    -rw-rw-r-- 1 usuario usuario   45 sep 17 12:00 ejemplo.txt
-    -rw-rw-r-- 1 usuario usuario  300 sep 17 12:00 fork_exec_archivo.py
+    total 8
+    -rw-rw-r-- 1 usuario usuario   54 sep 17 12:00 ejemplo.txt
+    -rw-rw-r-- 1 usuario usuario 1470 sep 17 12:00 leer_archivo.py
     
-    Proceso hijo 12346 terminó con estado 0.
+    Proceso hijo 18403 terminó con estado 0.
 
 ## Descripción del Código
 
