@@ -7,6 +7,7 @@ Este primer programa en Python consiste en uno que realiza tres llamadas al sist
 
 - Python 3 instalado en tu sistema Linux. 
 - Un archivo de texto (`ejemplo.txt`) en el directorio donde ejecutarás el programa.
+- El ejecutable del codigo (`leer_archivo.py`) descargado en el mismo directorio que el script.
 
 ## Instrucciones de Ejecución en Linux 
 
