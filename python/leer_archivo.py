@@ -1,4 +1,5 @@
 import os
+import sys
 
 # Ruta del archivo que vamos a leer (debes asegurarte de que el archivo exista)
 ruta_archivo = 'ejemplo.txt'
@@ -22,3 +23,24 @@ finally:
     # 3. Cerrar el archivo
     os.close(fd)                             # Llamada al sistema: cerrar archivo
     print("Archivo cerrado correctamente.")
+
+# 4. Crear un proceso hijo usando fork
+pid = os.fork()
+
+if pid == 0:
+    # Estamos en el proceso hijo
+    print("\nProceso hijo creado. Ejecutando `wc` para contar las lineas del archivo.\n")
+    
+    # 5. Reemplazar el proceso hijo con `ls -l` usando exec
+    try:
+        os.execvp('wc', ['wc', '-l', ruta_archivo])  # Llamada al sistema: exec
+    except FileNotFoundError:
+        print("Error: no se pudo ejecutar `ls`.")
+else:
+    # Estamos en el proceso padre
+    print(f"Proceso padre (PID: {os.getpid()}) esperando al proceso hijo (PID: {pid}).\n")
+    
+    # Esperamos a que el proceso hijo termine
+    pid_hijo, estado = os.wait()
+    print(f"Proceso hijo {pid_hijo} terminó con estado {estado}.")
+
