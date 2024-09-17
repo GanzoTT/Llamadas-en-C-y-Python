@@ -5,7 +5,7 @@ Este primer programa en Python consiste en uno que realiza tres llamadas al sist
 
 ## Requisitos
 
-- Python 3 instalado en tu sistema (Ubuntu generalmente lo tiene preinstalado).
+- Python 3 instalado en tu sistema Linux. 
 - Un archivo de texto (`ejemplo.txt`) en el directorio donde ejecutarás el programa.
 
 ## Instrucciones de Ejecución en Linux 
