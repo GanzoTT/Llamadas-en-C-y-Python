@@ -21,7 +21,7 @@ Esto creará un archivo ejemplo.txt con el contenido "Este es un ejemplo de cont
 
 ### 2. Ejecutar el Script
 
-Ahora que tienes el archivo ejemplo.txt listo, puedes ejecutar el script Python de la siguiente forma:
+Ahora que tienes el archivo (`ejemplo.txt`) listo, puedes ejecutar el script Python de la siguiente forma:
 
     python3 leer_archivo.py
 
